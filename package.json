@@ -4,7 +4,7 @@
   "description": "Buttons in modern styles by indytheme.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp compile-sass"
   },
   "repository": {
     "type": "git",
