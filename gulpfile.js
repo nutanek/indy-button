@@ -6,7 +6,7 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require('gulp-rename');
 
 gulp.task('compile-sass', function () {
-    return gulp.src('./sass/index.scss')
+    return gulp.src('./sass/indy-button.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css'))
         .pipe(cleanCSS({compatibility: 'ie8'}))
