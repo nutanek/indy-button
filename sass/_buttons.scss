@@ -56,7 +56,8 @@
 
 .b-indy-group {
     > .b-indy { 
-        float: left;
+        margin-left: -2px;
+        margin-right: -3px;
         &:first-child {
             border-top-right-radius: 0px;
             border-bottom-right-radius: 0px;
