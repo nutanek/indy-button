@@ -3,3 +3,33 @@
     font-size: $font;
     border-radius: $radius;
 }
+
+@mixin button-style($bgColor, $fontColor) {
+    background-color: $bgColor;
+    color: $fontColor;
+    &:hover {
+        background-color: darken($bgColor, 10%);
+    }
+    &.--convex {
+        @include button-convex-style($bgColor, $fontColor);
+    }
+    &.--line {
+        @include button-line-style($bgColor, $fontColor);
+    }
+}
+
+@mixin button-convex-style($bgColor, $fontColor) {
+    box-shadow: 0 5px 0 0 darken($bgColor, 15%);
+    &:hover {
+        background-color: darken($bgColor, 10%);
+        box-shadow: none;
+        -ms-transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+}
+
+@mixin button-line-style($bgColor, $fontColor) {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid $bgColor;
+}

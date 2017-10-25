@@ -1,13 +1,47 @@
 .b-indy {
+    cursor: pointer;
     border: none;
-    background: $color-red;
     font-family: $font-family;
     @include button-size(5px, 8px, 1em, 6px);
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    // Sizes
+    &.--small {
+        @include button-size(3px, 6px, 0.8em, 4px);
+    }
+    &.--large {
+        @include button-size(6px, 12px, 1.5em, 8px);
+    }
+
+    // Styles
+    &.--red {
+        @include button-style($color-red, $color-white);
+    }
+    &.--orange {
+        @include button-style($color-orange, $color-white);
+    }
+    &.--yellow {
+        @include button-style($color-yellow, $color-white);
+    }
+    &.--green {
+        @include button-style($color-green, $color-white);
+    }
+    &.--blue {
+        @include button-style($color-blue, $color-white);
+    }
+    &.--purple {
+        @include button-style($color-purple, $color-white);
+    }
+    &.--black {
+        @include button-style($color-black, $color-white);
+    }
+    &.--white {
+        @include button-style($color-white, $color-black);
+    }
 }
 
-.b-indy-small {
-    @include button-size(3px, 6px, 0.8em, 4px);
-}
-.b-indy-large {
-    @include button-size(6px, 12px, 1.5em, 8px);
-}
+
+
