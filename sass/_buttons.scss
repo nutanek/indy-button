@@ -41,7 +41,15 @@
     &.--white {
         @include button-style($color-white, $color-black);
     }
+
+    // disabled
+    &.--disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+
+    // full
+    &.--full {
+        width: 100%;
+    }
 }
-
-
-
