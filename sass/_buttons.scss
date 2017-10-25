@@ -53,3 +53,27 @@
         width: 100%;
     }
 }
+
+.b-indy-group {
+    > .b-indy { 
+        float: left;
+        &:first-child {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        &:last-child {
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0;
+        }
+    }
+    &.--full {
+        width: 100%;
+        display: flex;
+        .b-indy {
+            flex-grow: 1;
+        }
+    }
+}
