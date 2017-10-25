@@ -30,6 +30,14 @@
 }
 
 @mixin button-line-style($bgColor, $fontColor) {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
     border: 1px solid $bgColor;
+    color: $bgColor;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: color;
+    &:hover {
+        background-color: $bgColor;      
+        color: $fontColor;
+    }
 }
