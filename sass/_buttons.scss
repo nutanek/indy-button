@@ -1,0 +1,13 @@
+.b-indy {
+    border: none;
+    background: $color-red;
+    font-family: $font-family;
+    @include button-size(5px, 8px, 1em, 6px);
+}
+
+.b-indy-small {
+    @include button-size(3px, 6px, 0.8em, 4px);
+}
+.b-indy-large {
+    @include button-size(6px, 12px, 1.5em, 8px);
+}
