@@ -1,1 +1,60 @@
-# indy-button
+# Indy Button
+
+Modern-styled button for CSS 
+
+[DEMO](https://www.indytheme.com/indy-button)
+
+![indy-button](https://user-images.githubusercontent.com/26755833/32036011-31ff0462-ba47-11e7-93ab-6848c3392e63.jpg)
+
+## Setup
+
+You can download **indy-button.css** or **indy-button.min.css** and put it in header
+
+```
+<link rel="stylesheet" href="./css/indy-button.css">
+or
+<link rel="stylesheet" href="./css/indy-button.min.css">
+```
+
+## Usage
+
+Add class="**b-indy**" to <button> or <a> tag and add another styled-class you want
+
+**Example:**
+```
+<button type="button" class="b-indy --red --covex --full">Example</button>
+```
+
+#### All Properties:
+| Properties  | Available Classes |
+| ------------- | ------------- |
+| color  | --red --orange --yellow --green --blue --purple --black --white  |
+| style  | --convex --line  |
+| size  | --small --large --default  |
+| others  | --disabled --full  |
+
+#### Buton Group
+You can also display button group 
+```
+<div class="b-indy-group">
+  <button class="b-indy --red">Red</button>
+  <button class="b-indy --yellow">Yellow</button>
+  <button class="b-indy --blue">Blue</button>
+</div>
+```
+
+## Compile
+You can also compile source file (SASS) to CSS using `gulp` follow steps:
+```
+npm install gulp -g
+npm install
+npm start
+```
+
+## Authors
+
+* **NutAnek** - *Owner and Developer at* [indytheme](https://www.indytheme.com)
+
+## License
+
+Released under the [MIT License](http://www.opensource.org/licenses/MIT).
