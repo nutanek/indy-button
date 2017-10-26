@@ -10,7 +10,7 @@ Modern-styled button for CSS
 
 You can download **indy-button.css** or **indy-button.min.css** and put it in header
 
-```
+```html
 <link rel="stylesheet" href="./css/indy-button.css">
 or
 <link rel="stylesheet" href="./css/indy-button.min.css">
@@ -21,7 +21,7 @@ or
 Add class="**b-indy**" to <button> or <a> tag and add another styled-class you want
 
 **Example:**
-```
+```html
 <button type="button" class="b-indy --red --covex --full">Example</button>
 ```
 
@@ -35,7 +35,7 @@ Add class="**b-indy**" to <button> or <a> tag and add another styled-class you w
 
 #### Buton Group
 You can also display button group 
-```
+```html
 <div class="b-indy-group">
   <button class="b-indy --red">Red</button>
   <button class="b-indy --yellow">Yellow</button>
@@ -45,7 +45,7 @@ You can also display button group
 
 ## Compile
 You can also compile source file (SASS) to CSS using `gulp` follow steps:
-```
+```bash
 npm install gulp -g
 npm install
 npm start
