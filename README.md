@@ -2,11 +2,13 @@
 
 Modern-styled button for CSS 
 
-[DEMO](https://www.indytheme.com/indy-button)
+[DEMO](https://nutanek.github.io/indy-button/)
 
-![indy-button](https://user-images.githubusercontent.com/26755833/32036011-31ff0462-ba47-11e7-93ab-6848c3392e63.jpg)
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/26755833/32036011-31ff0462-ba47-11e7-93ab-6848c3392e63.jpg" alt="indy button demo"/>
+</p>
 
-## Setup
+## Installation
 
 You can download **indy-button.css** or **indy-button.min.css** and put it in header
 
@@ -43,7 +45,7 @@ You can also display button group
 </div>
 ```
 
-## Compile
+## Compilation
 You can also compile source file (SASS) to CSS using `gulp` follow steps:
 ```bash
 npm install gulp -g
@@ -51,7 +53,7 @@ npm install
 npm start
 ```
 
-## Authors
+## Author
 
 * **NutAnek** - *Owner and Developer at* [indytheme](https://www.indytheme.com)
 
